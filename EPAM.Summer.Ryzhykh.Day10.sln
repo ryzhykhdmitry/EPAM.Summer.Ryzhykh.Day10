@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciSequence", "Fibona
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciSequence.Tests", "FibonacciSequence.Tests\FibonacciSequence.Tests.csproj", "{45720D54-EDEE-459E-AC90-EDAF96BF3124}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fibonacci", "Fibonacci", "{A704E0C3-9BB0-4359-9078-BB9D979BF06E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomGenericQueue", "CustomGenericQueue", "{9435ACE8-954B-4892-A72C-F8BD709D2687}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomQueue", "CustomQueue\CustomQueue.csproj", "{803DFAD3-FB3D-43DE-AEAD-15BF398CB3D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +27,17 @@ Global
 		{45720D54-EDEE-459E-AC90-EDAF96BF3124}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45720D54-EDEE-459E-AC90-EDAF96BF3124}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45720D54-EDEE-459E-AC90-EDAF96BF3124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{803DFAD3-FB3D-43DE-AEAD-15BF398CB3D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{803DFAD3-FB3D-43DE-AEAD-15BF398CB3D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{803DFAD3-FB3D-43DE-AEAD-15BF398CB3D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{803DFAD3-FB3D-43DE-AEAD-15BF398CB3D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C589C8CF-5818-437E-A7DA-D936674A5FA3} = {A704E0C3-9BB0-4359-9078-BB9D979BF06E}
+		{45720D54-EDEE-459E-AC90-EDAF96BF3124} = {A704E0C3-9BB0-4359-9078-BB9D979BF06E}
+		{803DFAD3-FB3D-43DE-AEAD-15BF398CB3D3} = {9435ACE8-954B-4892-A72C-F8BD709D2687}
 	EndGlobalSection
 EndGlobal
