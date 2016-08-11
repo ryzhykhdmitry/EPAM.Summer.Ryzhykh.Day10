@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Matrix
 {
-    public abstract class AbstractMatrix<T> 
+    #region Abstact matrix
+    /// <summary>
+    /// Abstract matrix.
+    /// </summary>
+    /// <typeparam name="T">Specified type of the matrix.</typeparam>
+    public abstract class AbstractMatrix<T> //: IEnumerable<T>
     {
         protected T[] matrix;
 
@@ -33,7 +38,13 @@ namespace Matrix
         }
         #endregion
     }
+    #endregion
 
+    #region Square matrix
+    /// <summary>
+    /// Square matrix.
+    /// </summary>
+    /// <typeparam name="T">Specified type of the matrix.</typeparam>
     public class SquareMatrix<T> : AbstractMatrix<T>
     {
         public SquareMatrix(int size)
@@ -57,7 +68,13 @@ namespace Matrix
             }
         }
     }
+    #endregion
 
+    #region Diagonal matrix
+    /// <summary>
+    /// Diagonal matrix.
+    /// </summary>
+    /// <typeparam name="T">Specified type of the matrix.</typeparam>
     public class DiagonalMatrix<T> : AbstractMatrix<T>
     {
         public DiagonalMatrix(int size)
@@ -89,7 +106,13 @@ namespace Matrix
             }
         }
     }
+    #endregion
 
+    #region Triangular matrix
+    /// <summary>
+    /// Triangular matrix.
+    /// </summary>
+    /// <typeparam name="T">Specified type of the matrix.</typeparam>
     public class TriangularMatrix<T> : AbstractMatrix<T>
     {
         public TriangularMatrix(int size)
@@ -119,7 +142,12 @@ namespace Matrix
             }
         }
     }
+    #endregion
 
+    #region Event arguments.
+    /// <summary>
+    /// Matrix change evevnt arguments.
+    /// </summary>
     public sealed class ChangeMatrixEventArgs : EventArgs
     {
         #region fields
@@ -139,5 +167,6 @@ namespace Matrix
         public int IndexRow { get { return indexRow; } }
         public int IndexColumn { get { return indexColumn; } }
         #endregion
-    }
+    } 
+    #endregion
 }
